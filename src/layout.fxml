@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<GridPane fx:controller="Launcher"
+          xmlns:fx="http://javafx.com/fxml"
+          alignment="center" hgap="10" vgap="10">
+    <padding><Insets top="25" right="25" bottom="10" left="25"/></padding>
+
+    <TextField
+        GridPane.columnIndex="0"
+        GridPane.rowIndex="0"
+        promptText="username" />
+    <PasswordField
+        GridPane.columnIndex="0"
+        GridPane.rowIndex="1"
+        promptText="password" />
+
+    <HBox
+        GridPane.columnIndex="0"
+        GridPane.rowIndex="2">
+
+        <Button text="login" />
+        <Button text="register" />
+    </HBox>
+
+</GridPane>

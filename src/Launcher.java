@@ -1,7 +1,18 @@
 import javafx.application.Application;
+import javafx.fxml.FXMLLoader;
+import javafx.geometry.Insets;
+import javafx.geometry.Pos;
+import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.Button;
+import javafx.scene.control.Label;
+import javafx.scene.control.PasswordField;
+import javafx.scene.control.TextField;
+import javafx.scene.layout.GridPane;
 import javafx.scene.layout.StackPane;
 import javafx.stage.Stage;
+
+import java.awt.*;
 
 /**
  * Created by David on 5/29/2015.
@@ -9,8 +20,9 @@ import javafx.stage.Stage;
 public class Launcher extends Application {
 
     @Override
-    public void start(Stage primaryStage) {
-        StackPane root = new StackPane();
+    public void start(Stage primaryStage) throws Exception {
+        Parent root = FXMLLoader.load(getClass().getResource("layout.fxml"));
+
         Scene scene = new Scene(root, 1280, 720);
 
         primaryStage.setScene(scene);
