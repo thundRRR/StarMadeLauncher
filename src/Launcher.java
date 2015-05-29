@@ -24,8 +24,11 @@ public class Launcher extends Application {
         Parent root = FXMLLoader.load(getClass().getResource("layout.fxml"));
 
         Scene scene = new Scene(root, 1280, 720);
+        scene.getStylesheets().add
+                (Launcher.class.getResource("stylesheet.css").toExternalForm());
 
         primaryStage.setScene(scene);
+        primaryStage.setResizable(false);
         primaryStage.show();
     }
 

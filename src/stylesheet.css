@@ -1,0 +1,4 @@
+#content {
+    -fx-background-image: url("/resources/bg.jpg");
+    -fx-background-color: black;
+}
