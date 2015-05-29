@@ -1,4 +1,11 @@
 #content {
-    -fx-background-image: url("/resources/bg.jpg");
-    -fx-background-color: black;
+    -fx-background-image: url("resources/bg.jpg");
+}
+
+#inputbox {
+    -fx-background-color: rgba(0, 0, 0, 0.5);
+}
+
+#inputbox Label {
+    -fx-text-fill: white;
 }
